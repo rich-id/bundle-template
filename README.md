@@ -1,11 +1,8 @@
 # Template Bundle tasks
 
 - Replace `template-bundle` by `your-bundle-name-bundle`
-- Replace `RichCongressTemplateBundle` by `RichCongressYourBundleNameBundle`
-- Replace `RichCongress\TemplateBundle` by `RichCongress\YourBundleNameBundle`
-- Replace `RichCongress\\TemplateBundle` by `RichCongress\\YourBundleNameBundle`
-- Rename `RichCongressTemplateBundle` by `RichCongressYourBundleNameBundle`
-- Rename `RichCongressTemplateExtension` by `RichCongressYourBundleNameExtension`
+- Replace `TemplateBundle` by `YourBundleNameBundle`
+- Rename `TemplateExtension` by `YourBundleNameExtension`
 - Change the `Configuration::CONFIG_NODE` constant
 - Add the Secret `COVERALLS_SECRET` in the Github Actions to have [Coveralls](https://coveralls.io/repos/new) working
 - Add the bundle to [Code Climate quality tool](https://codeclimate.com/dashboard) and change the badge URL
