@@ -15,11 +15,11 @@ The RichCongress Template Bundle
 This version of the bundle requires Symfony 4.4+ and PHP 7.3+.
 
 [![Package version](https://img.shields.io/packagist/v/richcongress/template-bundle)](https://packagist.org/packages/richcongress/template-bundle)
-[![Build Status](https://img.shields.io/travis/richcongress/template-bundle.svg?branch=master)](https://travis-ci.org/richcongress/template-bundle?branch=master)
+[![Actions Status](https://github.com/richcongress/template-bundle/workflows/Tests/badge.svg)](https://github.com/t/richcongress/template-bundle/actions)
 [![Coverage Status](https://coveralls.io/repos/github/richcongress/template-bundle/badge.svg?branch=master)](https://coveralls.io/github/richcongress/template-bundle?branch=master)
 [![Maintainability](https://api.codeclimate.com/v1/badges/template-bundle/maintainability)](https://codeclimate.com/github/richcongress/template-bundle/maintainability)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/richcongress/template-bundle/issues)
-[![License](https://img.shields.io/badge/license-MIT-red.svg)](LICENSE.md)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md)
 
 Short description
 
