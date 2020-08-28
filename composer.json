@@ -9,6 +9,12 @@
             "homepage": "https://www.richcongress.com"
         }
     ],
+    "support": {
+        "email": "contact@richcongress.com",
+        "source": "https://github.com/richcongress/template-bundle",
+        "docs": "https://github.com/richcongress/template-bundle/blob/master/README.md",
+        "issues": "https://github.com/richcongress/template-bundle/issues"
+    },
     "require": {
         "php": ">=7.3",
         "richcongress/bundle-toolbox": "*"

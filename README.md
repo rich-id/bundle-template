@@ -52,7 +52,7 @@ composer require richcongress/template-bundle
 
 # 3. Versioning
 
-unit-bundle follows [semantic versioning](https://semver.org/). In short the scheme is MAJOR.MINOR.PATCH where
+template-bundle follows [semantic versioning](https://semver.org/). In short the scheme is MAJOR.MINOR.PATCH where
 1. MAJOR is bumped when there is a breaking change,
 2. MINOR is bumped when a new feature is added in a backward-compatible way,
 3. PATCH is bumped when a bug is fixed in a backward-compatible way.
@@ -92,6 +92,6 @@ docker-compose exec application bash
 
 # 6. License
 
-unit-bundle is distributed under the terms of the MIT license.
+template-bundle is distributed under the terms of the MIT license.
 
 See [LICENSE](LICENSE.md) for details.
