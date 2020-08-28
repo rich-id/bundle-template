@@ -1,0 +1,36 @@
+{
+    "name": "richcongress/template-bundle",
+    "description": "A magic bundle",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "RichCongress",
+            "homepage": "https://www.richcongress.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.3",
+        "richcongress/bundle-toolbox": "*"
+    },
+    "require-dev": {
+        "richcongress/unit-bundle": "v2.0.0.x-dev",
+        "infection/infection": "^0.16.4",
+        "php-coveralls/php-coveralls": "^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "RichCongress\\TemplateBundle\\": ""
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RichCongress\\TemplateBundle\\Tests\\": "Tests/"
+        }
+    },
+    "config": {
+        "bin-dir": "bin",
+        "discard-changes": true,
+        "sort-packages": true
+    }
+}
