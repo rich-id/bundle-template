@@ -2,6 +2,8 @@
 
 namespace RichCongress\TemplateBundle;
 
+use RichCongress\BundleToolbox\Configuration\AbstractBundle;
+
 /**
  * Class RichCongressTemplateBundle
  *
@@ -11,17 +13,5 @@ namespace RichCongress\TemplateBundle;
  */
 class RichCongressTemplateBundle extends AbstractBundle
 {
-    public const COMPILER_PASSES = [    ];
-
-    /**
-     * @return void
-     */
-    public function boot(): void
-    {
-        parent::boot();
-
-        // Autowire everything for the FixturesManager before the first test
-        $this->container->get(OverrideServicesUtility::class);
-        $this->container->get(FixturesManager::class);
-    }
+    public const COMPILER_PASSES = [];
 }

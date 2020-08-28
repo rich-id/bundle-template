@@ -2,6 +2,11 @@
 
 namespace RichCongress\TemplateBundle\DependencyInjection;
 
+use RichCongress\BundleToolbox\Configuration\AbstractExtension;
+use Symfony\Component\Config\FileLocator;
+use Symfony\Component\DependencyInjection\ContainerBuilder;
+use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
+
 /**
  * This is the class that loads and manages your bundle configuration
  *
@@ -14,7 +19,6 @@ class RichCongressUnitExtension extends AbstractExtension
      * @param ContainerBuilder $container
      *
      * @return void
-     * @throws \Exception
      */
     public function load(array $configs, ContainerBuilder $container): void
     {
@@ -24,7 +28,7 @@ class RichCongressUnitExtension extends AbstractExtension
             $configs
         );
 
-        $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__ . '/../Resources'));
+        $loader = new XmlFileLoader($container, new FileLocator(__DIR__ . '/../Resources'));
         $loader->load('services.yml');
     }
 }
