@@ -2,7 +2,7 @@
 
 namespace RichId\TemplateBundle\Tests;
 
-use RichId\Bundle\UnitBundle\TestCase\TestCase;
+use RichCongress\TestTools\TestCase\TestCase;
 use RichId\TemplateBundle\RichIdTemplateBundle;
 
 /**

@@ -17,10 +17,10 @@
     },
     "require": {
         "php": ">=7.3",
-        "rich-id/bundle-toolbox": "*"
+        "richcongress/bundle-toolbox": "*"
     },
     "require-dev": {
-        "rich-id/test-suite": "^0.1"
+        "richcongress/test-suite": "^0.1"
     },
     "autoload": {
         "psr-4": {

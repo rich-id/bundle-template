@@ -2,7 +2,7 @@
 
 namespace RichId\TemplateBundle\DependencyInjection;
 
-use RichId\BundleToolbox\Configuration\AbstractConfiguration;
+use RichCongress\BundleToolbox\Configuration\AbstractConfiguration;
 use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
 use Symfony\Component\Config\Definition\Builder\NodeBuilder;
 
@@ -13,7 +13,7 @@ use Symfony\Component\Config\Definition\Builder\NodeBuilder;
  */
 class Configuration extends AbstractConfiguration
 {
-    public const CONFIG_NODE = 'rich_congress_unit';
+    public const CONFIG_NODE = 'rich_id_template';
 
     /**
      * @param ArrayNodeDefinition $rootNode

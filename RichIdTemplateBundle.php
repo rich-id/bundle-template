@@ -2,7 +2,7 @@
 
 namespace RichId\TemplateBundle;
 
-use RichId\BundleToolbox\Configuration\AbstractBundle;
+use RichCongress\BundleToolbox\Configuration\AbstractBundle;
 
 /**
  * Class RichIdTemplateBundle
