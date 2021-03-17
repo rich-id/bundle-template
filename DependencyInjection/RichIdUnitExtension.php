@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace RichCongress\TemplateBundle\DependencyInjection;
+namespace RichId\TemplateBundle\DependencyInjection;
 
-use RichCongress\BundleToolbox\Configuration\AbstractExtension;
+use RichId\BundleToolbox\Configuration\AbstractExtension;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
@@ -12,7 +12,7 @@ use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
  *
  * To learn more see {@link http://symfony.com/doc/current/cookbook/bundles/extension.html}
  */
-class RichCongressUnitExtension extends AbstractExtension
+class RichIdUnitExtension extends AbstractExtension
 {
     /**
      * @param array            $configs

@@ -32,7 +32,7 @@
                 <directory>Tests</directory>
                 <directory>vendor</directory>
                 <file>phpunit-filter.php</file>
-                <file>RichCongressTemplateBundle.php</file>
+                <file>RichIdTemplateBundle.php</file>
             </exclude>
         </whitelist>
     </filter>

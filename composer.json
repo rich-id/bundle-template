@@ -1,37 +1,35 @@
 {
-    "name": "richcongress/template-bundle",
+    "name": "rich-id/template-bundle",
     "description": "A magic bundle",
     "type": "symfony-bundle",
     "license": "MIT",
     "authors": [
         {
-            "name": "RichCongress",
-            "homepage": "https://www.richcongress.com"
+            "name": "RichId",
+            "homepage": "https://www.rich-id.com"
         }
     ],
     "support": {
-        "email": "contact@richcongress.com",
-        "source": "https://github.com/richcongress/template-bundle",
-        "docs": "https://github.com/richcongress/template-bundle/blob/master/README.md",
-        "issues": "https://github.com/richcongress/template-bundle/issues"
+        "email": "contact@rich-id.com",
+        "source": "https://github.com/rich-id/template-bundle",
+        "docs": "https://github.com/rich-id/template-bundle/blob/master/README.md",
+        "issues": "https://github.com/rich-id/template-bundle/issues"
     },
     "require": {
         "php": ">=7.3",
-        "richcongress/bundle-toolbox": "*"
+        "rich-id/bundle-toolbox": "*"
     },
     "require-dev": {
-        "richcongress/unit-bundle": "v2.0.0.x-dev",
-        "infection/infection": "^0.16.4",
-        "php-coveralls/php-coveralls": "^2.1"
+        "rich-id/test-suite": "^0.1"
     },
     "autoload": {
         "psr-4": {
-            "RichCongress\\TemplateBundle\\": ""
+            "RichId\\TemplateBundle\\": ""
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "RichCongress\\TemplateBundle\\Tests\\": "Tests/"
+            "RichId\\TemplateBundle\\Tests\\": "Tests/"
         }
     },
     "config": {

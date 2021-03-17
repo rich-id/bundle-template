@@ -1,23 +1,23 @@
 <?php declare(strict_types=1);
 
-namespace RichCongress\TemplateBundle\Tests;
+namespace RichId\TemplateBundle\Tests;
 
-use RichCongress\Bundle\UnitBundle\TestCase\TestCase;
-use RichCongress\TemplateBundle\RichCongressTemplateBundle;
+use RichId\Bundle\UnitBundle\TestCase\TestCase;
+use RichId\TemplateBundle\RichIdTemplateBundle;
 
 /**
  * Class DummyTest
  *
- * @package   RichCongress\TemplateBundle\Tests
- * @author    Nicolas Guilloux <nguilloux@richcongress.com>
- * @copyright 2014 - 2020 RichCongress (https://www.richcongress.com)
+ * @package   RichId\TemplateBundle\Tests
+ * @author    Nicolas Guilloux <nguilloux@rich-id.com>
+ * @copyright 2014 - 2020 RichId (https://www.rich-id.com)
  */
 class DummyTest extends TestCase
 {
     public function testInstanciateBundle(): void
     {
-        $bundle = new RichCongressTemplateBundle();
+        $bundle = new RichIdTemplateBundle();
 
-        self::assertInstanceOf(RichCongressTemplateBundle::class, $bundle);
+        self::assertInstanceOf(RichIdTemplateBundle::class, $bundle);
     }
 }

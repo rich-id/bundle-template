@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace RichCongress\TemplateBundle\DependencyInjection;
+namespace RichId\TemplateBundle\DependencyInjection;
 
-use RichCongress\BundleToolbox\Configuration\AbstractConfiguration;
+use RichId\BundleToolbox\Configuration\AbstractConfiguration;
 use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
 use Symfony\Component\Config\Definition\Builder\NodeBuilder;
 
