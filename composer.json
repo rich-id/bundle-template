@@ -20,7 +20,8 @@
         "richcongress/bundle-toolbox": "*"
     },
     "require-dev": {
-        "richcongress/test-suite": "^0.1"
+        "richcongress/test-suite": "^0.1",
+        "phpunit/phpunit": "^8.5"
     },
     "autoload": {
         "psr-4": {

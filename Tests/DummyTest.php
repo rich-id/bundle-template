@@ -11,6 +11,8 @@ use RichId\TemplateBundle\RichIdTemplateBundle;
  * @package   RichId\TemplateBundle\Tests
  * @author    Nicolas Guilloux <nguilloux@rich-id.com>
  * @copyright 2014 - 2020 RichId (https://www.rich-id.com)
+ *
+ * @covers \RichId\TemplateBundle\RichIdTemplateBundle
  */
 class DummyTest extends TestCase
 {
