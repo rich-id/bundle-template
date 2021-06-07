@@ -15,10 +15,7 @@ use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
 class RichIdTemplateExtension extends AbstractExtension
 {
     /**
-     * @param array            $configs
-     * @param ContainerBuilder $container
-     *
-     * @return void
+     * @param array<string, mixed> $configs
      */
     public function load(array $configs, ContainerBuilder $container): void
     {

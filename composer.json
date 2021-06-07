@@ -20,9 +20,10 @@
         "richcongress/bundle-toolbox": "*"
     },
     "require-dev": {
-        "roave/security-advisories": "dev-latest",
+        "phpunit/phpunit": "^8.5",
+        "richcongress/static-analysis": "dev-master",
         "richcongress/test-suite": "^0.1",
-        "phpunit/phpunit": "^8.5"
+        "roave/security-advisories": "dev-latest"
     },
     "autoload": {
         "psr-4": {

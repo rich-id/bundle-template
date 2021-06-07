@@ -13,7 +13,9 @@
         <ini name="error_reporting" value="-1"/>
         <env name="KERNEL_DIR" value="Tests/Resources/Kernel" />
         <env name="KERNEL_CLASS" value="RichId\TemplateBundle\Tests\Resources\Kernel\TestKernel" />
+        <env name="SHELL_VERBOSITY" value="-1" />
         <env name="SYMFONY_DEPRECATIONS_HELPER" value="weak" />
+        <env name="SYMFONY_PHPUNIT_REMOVE" value="" />
         <env name="SYMFONY_PHPUNIT_VERSION" value="8.5" />
     </php>
 
@@ -23,19 +25,28 @@
         </testsuite>
     </testsuites>
 
-    <coverage processUncoveredFiles="true">
-        <include>
-            <directory suffix=".php">.</directory>
-        </include>
-        <exclude>
-            <directory>bin</directory>
-            <directory>DependencyInjection</directory>
-            <directory>Resources</directory>
-            <directory>Tests</directory>
-            <directory>var</directory>
-            <directory>vendor</directory>
-            <file>phpunit-filter.php</file>
-            <file>RichIdTemplateBundle.php</file>
-        </exclude>
-    </coverage>
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./</directory>
+            <exclude>
+                <directory>bin</directory>
+                <directory>DependencyInjection</directory>
+                <directory>Resources</directory>
+                <directory>Tests</directory>
+                <directory>var</directory>
+                <directory>vendor</directory>
+                <file>phpunit-filter.php</file>
+                <file>phpinsights.php</file>
+                <file>RichIdTemplateBundle.php</file>
+            </exclude>
+        </whitelist>
+    </filter>
+
+    <extensions>
+        <extension class="RichCongress\TestFramework\PHPUnitExtension">
+            <arguments>
+                <string>RichCongress\WebTestBundle\TestHook</string>
+            </arguments>
+        </extension>
+    </extensions>
 </phpunit>

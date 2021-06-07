@@ -23,7 +23,8 @@
 .idea
 
 # Coverage
-coverage/
+/coverage
+/reports
 
 # Database
 /.db
