@@ -7,6 +7,13 @@
 - Add the Secret `COVERALLS_SECRET` in the Github Actions to have [Coveralls](https://coveralls.io/repos/new) working
 - Add the bundle to [Code Climate quality tool](https://codeclimate.com/dashboard) and change the badge URL
 - Change ReadMe title
+- Add static analysis lines
+```
+ln -sr ./vendor/richcongress/static-analysis/configs/phpstan.neon ./
+ln -sr ./vendor/richcongress/static-analysis/configs/phpinsights.php ./
+ln -sr ./vendor/richcongress/static-analysis/configs/php-cs-fixer.dist.php ./.php-cs-fixer.dist.php
+```
+
 - Remove these lines
 
 
@@ -16,10 +23,12 @@ The RichId Template Bundle
 This version of the bundle requires Symfony 4.4+ and PHP 7.3+.
 
 [![Package version](https://img.shields.io/packagist/v/rich-id/template-bundle)](https://packagist.org/packages/rich-id/template-bundle)
-[![Actions Status](https://github.com/rich-id/template-bundle/workflows/Tests/badge.svg)](https://github.com/t/rich-id/template-bundle/actions)
+[![Actions Status](https://github.com/rich-id/template-bundle/workflows/Tests/badge.svg)](https://github.com/rich-id/template-bundle/actions)
 [![Coverage Status](https://coveralls.io/repos/github/rich-id/template-bundle/badge.svg?branch=master)](https://coveralls.io/github/rich-id/template-bundle?branch=master)
 [![Maintainability](https://api.codeclimate.com/v1/badges/template-bundle/maintainability)](https://codeclimate.com/github/rich-id/template-bundle/maintainability)
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/rich-id/template-bundle/issues)
+![Symfony 4.4+](https://img.shields.io/badge/Symfony-4.4+-000000)
+![PHP 7.3+](https://img.shields.io/badge/PHP-7.3+-858ebb.svg)
+[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/rich-id/template-bundle/issues)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md)
 
 Short description
@@ -49,7 +58,7 @@ composer require rich-id/template-bundle
 
 # 2 Getting started
 
-- [Configuration](Docs/Configuration.md)
+- [Configuration](docs/Configuration.md)
 
 # 3. Versioning
 
@@ -95,4 +104,4 @@ docker-compose exec application bash
 
 template-bundle is distributed under the terms of the MIT license.
 
-See [LICENSE](LICENSE.md) for details.
+See [LICENSE](LICENSE) for details.

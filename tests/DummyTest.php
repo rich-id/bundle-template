@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace RichId\TemplateBundle\Tests;
+namespace RichId\TemplateBundle\tests;
 
 use RichCongress\TestTools\TestCase\TestCase;
 use RichId\TemplateBundle\RichIdTemplateBundle;

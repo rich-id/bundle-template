@@ -17,7 +17,7 @@
     },
     "require": {
         "php": ">=7.3",
-        "richcongress/bundle-toolbox": "*"
+        "richcongress/bundle-toolbox": "^1.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^8.5",
@@ -27,17 +27,36 @@
     },
     "autoload": {
         "psr-4": {
-            "RichId\\TemplateBundle\\": ""
+            "RichId\\TemplateBundle\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "RichId\\TemplateBundle\\Tests\\": "Tests/"
+            "RichId\\TemplateBundle\\Tests\\": "tests/"
         }
     },
     "config": {
         "bin-dir": "bin",
         "discard-changes": true,
         "sort-packages": true
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "[ $COMPOSER_DEV_MODE -eq 0 ] || cghooks add --ignore-lock"
+        ],
+        "post-update-cmd": [
+            "[ $COMPOSER_DEV_MODE -eq 0 ] || cghooks update"
+        ]
+    },
+    "extra": {
+        "hooks": {
+            "pre-commit": [
+                "./bin/php-cs-fixer fix"
+            ],
+            "pre-push": [
+                "./bin/php-cs-fixer fix --dry-run",
+                "./bin/static_analysis"
+            ]
+        }
     }
 }

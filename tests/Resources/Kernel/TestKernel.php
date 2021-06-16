@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace RichId\TemplateBundle\Tests\Resources\Kernel;
+namespace RichId\TemplateBundle\tests\Resources\Kernel;
 
 use RichCongress\WebTestBundle\Kernel\DefaultTestKernel;
 

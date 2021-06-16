@@ -20,23 +20,17 @@
     </php>
 
     <testsuites>
-        <testsuite name="Project Test Suite">
-            <directory suffix="Test.php">Tests</directory>
+        <testsuite name="TemplateBundle Test Suite">
+            <directory suffix="Test.php">tests</directory>
         </testsuite>
     </testsuites>
 
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
-            <directory suffix=".php">./</directory>
+            <directory suffix=".php">src</directory>
             <exclude>
-                <directory>bin</directory>
                 <directory>DependencyInjection</directory>
                 <directory>Resources</directory>
-                <directory>Tests</directory>
-                <directory>var</directory>
-                <directory>vendor</directory>
-                <file>phpunit-filter.php</file>
-                <file>phpinsights.php</file>
                 <file>RichIdTemplateBundle.php</file>
             </exclude>
         </whitelist>
