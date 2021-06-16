@@ -1,26 +1,5 @@
-# Template Bundle tasks
-
-- Replace `template-bundle` by `your-bundle-name-bundle`
-- Replace `TemplateBundle` by `YourBundleNameBundle`
-- Rename `TemplateExtension` by `YourBundleNameExtension`
-- Change the `Configuration::CONFIG_NODE` constant
-- Add the Secret `COVERALLS_SECRET` in the Github Actions to have [Coveralls](https://coveralls.io/repos/new) working
-- Add the bundle to [Code Climate quality tool](https://codeclimate.com/dashboard) and change the badge URL
-- Change ReadMe title
-- Add static analysis lines
-```
-ln -sr ./vendor/richcongress/static-analysis/configs/phpstan.neon ./
-ln -sr ./vendor/richcongress/static-analysis/configs/phpinsights.php ./
-ln -sr ./vendor/richcongress/static-analysis/configs/php-cs-fixer.dist.php ./.php-cs-fixer.dist.php
-```
-
-- Remove these lines
-
-
 The RichId Template Bundle
 =======================================
-
-This version of the bundle requires Symfony 4.4+ and PHP 7.3+.
 
 [![Package version](https://img.shields.io/packagist/v/rich-id/template-bundle)](https://packagist.org/packages/rich-id/template-bundle)
 [![Actions Status](https://github.com/rich-id/template-bundle/workflows/Tests/badge.svg)](https://github.com/rich-id/template-bundle/actions)
@@ -30,6 +9,7 @@ This version of the bundle requires Symfony 4.4+ and PHP 7.3+.
 ![PHP 7.3+](https://img.shields.io/badge/PHP-7.3+-858ebb.svg)
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/rich-id/template-bundle/issues)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md)
+
 
 Short description
 
