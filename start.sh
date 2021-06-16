@@ -25,12 +25,17 @@ find . -type f -not -path "./.git/*" -exec sed -i "s/The RichId Template Bundle/
 find . -type f -not -path "./.git/*" -exec sed -i "s/template-bundle/${name_with_dash}-bundle/g" {} +
 find . -type f -not -path "./.git/*" -exec sed -i "s/rich_id_template/rich_id_${name_with_dash}/g" {} +
 
+# Replace Readme
+rm ./README.md
+mv ./README.md.dist README.md
+
 # Delete script
 rm ./start.sh
 
 # Output message
 echo ""
 echo "The bundle is almost ready!"
-echo "Please do the following actions right now"
+echo "Please do the following actions right now:"
 echo "- Add the Secret \`COVERALLS_SECRET\` in the Github Actions, you can get it here: https://coveralls.io/repos/new"
 echo "- Add the bundle to Code Climate quality tool and update its badge: https://codeclimate.com/dashboard"
+echo "- Declare your new package in Packagist: https://packagist.org/packages/submit"
