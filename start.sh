@@ -23,7 +23,7 @@ find . -type f -not -path "./.git/*" -exec sed -i "s/TemplateBundle/${name}Bundl
 find . -type f -not -path "./.git/*" -exec sed -i "s/TemplateExtension/${name}Extension/g" {} +
 find . -type f -not -path "./.git/*" -exec sed -i "s/The RichId Template Bundle/The RichId ${name} Bundle/g" {} +
 find . -type f -not -path "./.git/*" -exec sed -i "s/template-bundle/${name_with_dash}-bundle/g" {} +
-find . -type f -not -path "./.git/*" -exec sed -i "s/rich_id_template/rich_id_${name_with_dash}/g" {} +
+find . -type f -not -path "./.git/*" -exec sed -i "s/rich_id_template/rich_id_${name_with_underscore}/g" {} +
 
 # Replace Readme
 rm ./README.md
