@@ -1,6 +1,5 @@
-# Cache and logs (Symfony3 directory structure)
-/var/*
-!var/.gitkeep
+# Symfony
+/var
 
 # Managed by Composer
 /bin
@@ -27,4 +26,7 @@
 /reports
 
 # Database
-/.db
+*.db
+
+# Static utilities
+.php_cs.cache

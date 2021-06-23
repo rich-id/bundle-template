@@ -13,11 +13,10 @@ class Configuration extends AbstractConfiguration
     protected function buildConfiguration(ArrayNodeDefinition $rootNode): void
     {
         $children = $rootNode->children();
-        $this->buildConfig($children);
-        $children->end();
+        $this->addConfig($children);
     }
 
-    protected function buildConfig(NodeBuilder $nodeBuilder): void
+    protected function addConfig(NodeBuilder $nodeBuilder): void
     {
         // Do something
     }
