@@ -74,7 +74,7 @@ As a reminder, all contributors are expected to follow our [Code of Conduct](COD
 
 == 5. License
 
-test-suite is distributed under the terms of the MIT license.
+cookies-regulation-bundle is distributed under the terms of the MIT license.
 
 See link:./LICENSE[LICENSE^] for details.
 
