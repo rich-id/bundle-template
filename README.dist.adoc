@@ -16,7 +16,7 @@ image:https://github.com/rich-id/template-bundle/workflows/Tests/badge.svg[link=
 image:https://coveralls.io/repos/github/rich-id/template-bundle/badge.svg?branch=master[link="https://coveralls.io/github/rich-id/template-bundle?branch=master",window="_blank"]
 image:https://api.codeclimate.com/v1/badges/template-bundle/maintainability[link="https://codeclimate.com/github/rich-id/template-bundle/maintainability",window="_blank"]
 image:https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat[link="https://github.com/richcongress/test-suite/issues",window="_blank"]
-image:https://img.shields.io/badge/license-MIT-blue.svg[link="LICENSE.md",window="_blank"]
+image:https://img.shields.io/badge/license-MIT-blue.svg[link="LICENSE",window="_blank"]
 image:https://img.shields.io/badge/PHP-7.3%2B-yellow[]
 image:https://img.shields.io/badge/Symfony-4%2B-black[]
 image:https://img.shields.io/badge/Symfony-5%2B-black[]
