@@ -27,7 +27,7 @@ find . -type f -not -path "./.git/*" -exec sed -i "s/rich_id_template/rich_id_${
 
 # Replace Readme
 rm ./README.md
-mv ./README.md.dist README.md
+mv ./README.dist.adoc README.adoc
 
 # Delete script
 rm ./start.sh

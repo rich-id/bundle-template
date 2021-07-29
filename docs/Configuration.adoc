@@ -1,0 +1,8 @@
+== Configuration
+
+Here is a sample of configuration:
+
+[source,yaml]
+----
+rich_id_template:
+----
