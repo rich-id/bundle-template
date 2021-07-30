@@ -27,7 +27,7 @@ jobs:
 
             - name: PHPInsights 🔧
               run: |
-                  docker-compose exec -T application ./vendor/nunomaduro/phpinsights/bin/phpinsights
+                  docker-compose exec -T application ./vendor/nunomaduro/phpinsights/bin/phpinsights  --no-interaction --min-quality=100 --min-architecture=100
 
             - name: PHPStan 🔧
               run: |

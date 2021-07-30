@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace RichId\TemplateBundle\tests\Resources\Kernel;
+namespace RichId\TemplateBundle\Tests\Resources\Kernel;
 
 use RichCongress\WebTestBundle\Kernel\DefaultTestKernel;
 
@@ -15,7 +15,7 @@ class TestKernel extends DefaultTestKernel
 {
     public function __construct()
     {
-        parent::__construct('test', false);
+        parent::__construct('test', true);
     }
 
     /**

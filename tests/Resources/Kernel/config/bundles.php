@@ -1,5 +1,6 @@
 <?php declare(strict_types=1);
 
 return [
-    RichId\TemplateBundle\RichIdTemplateBundle::class => ['all' => true],
+    RichCongress\RecurrentFixturesTestBundle\RichCongressRecurrentFixturesTestBundle::class => ['all' => true],
+    RichId\TemplateBundle\RichIdTemplateBundle::class                                       => ['all' => true],
 ];

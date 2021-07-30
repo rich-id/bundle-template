@@ -1,9 +1,12 @@
 <?php declare(strict_types=1);
 
-namespace RichId\TemplateBundle\tests;
+namespace RichId\TemplateBundle\Tests;
 
-use RichCongress\TestTools\TestCase\TestCase;
+use RichCongress\TestFramework\TestConfiguration\Annotation\TestConfig;
+use RichCongress\TestSuite\TestCase\TestCase;
+use RichId\TemplateBundle\DependencyInjection\Configuration;
 use RichId\TemplateBundle\RichIdTemplateBundle;
+use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
 
 /**
  * Class DummyTest
@@ -16,10 +19,22 @@ use RichId\TemplateBundle\RichIdTemplateBundle;
  */
 class DummyTest extends TestCase
 {
-    public function testInstanciateBundle(): void
+    public function testInstantiateBundle(): void
     {
         $bundle = new RichIdTemplateBundle();
 
         self::assertInstanceOf(RichIdTemplateBundle::class, $bundle);
+    }
+
+    /**
+     * @TestConfig("container")
+     */
+    public function testCanInstantiateContainer(): void
+    {
+        /** @var ParameterBagInterface $parameterBag */
+        $parameterBag = $this->getService(ParameterBagInterface::class);
+
+        self::assertInstanceOf(ParameterBagInterface::class, $parameterBag);
+        self::assertNotNull($parameterBag->get(Configuration::CONFIG_NODE));
     }
 }
