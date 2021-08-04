@@ -2,7 +2,7 @@ name: Tests
 on: [push]
 
 jobs:
-    build-and-test:
+    phpunit:
         runs-on: ubuntu-18.04
         steps:
             - name: Checkout 🛎️
