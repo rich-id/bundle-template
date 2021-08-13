@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace RichId\TemplateBundle\Tests;
 
@@ -9,9 +11,8 @@ use RichId\TemplateBundle\RichIdTemplateBundle;
 use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
 
 /**
- * Class DummyTest
+ * Class DummyTest.
  *
- * @package   RichId\TemplateBundle\Tests
  * @author    Nicolas Guilloux <nguilloux@rich-id.com>
  * @copyright 2014 - 2020 RichId (https://www.rich-id.com)
  *
@@ -26,9 +27,7 @@ class DummyTest extends TestCase
         self::assertInstanceOf(RichIdTemplateBundle::class, $bundle);
     }
 
-    /**
-     * @TestConfig("container")
-     */
+    /** @TestConfig("container") */
     public function testCanInstantiateContainer(): void
     {
         /** @var ParameterBagInterface $parameterBag */

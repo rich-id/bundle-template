@@ -16,7 +16,7 @@ ifndef::env-github[]
 image:.github/logo.svg[Logo, align=center]
 endif::[]
 
-image:https://img.shields.io/packagist/v/rich-id/template-bundle-bundle[link="https://packagist.org/packages/rich-id/template-bundle-bundle",window="_blank"]
+image:https://img.shields.io/packagist/v/rich-id/template-bundle[link="https://packagist.org/packages/rich-id/template-bundle",window="_blank"]
 image:https://github.com/rich-id/template-bundle/workflows/Tests/badge.svg[link="https://github.com/rich-id/template-bundle/actions",window="_blank"]
 image:https://coveralls.io/repos/github/rich-id/template-bundle/badge.svg?branch=master[link="https://coveralls.io/github/rich-id/template-bundle?branch=master",window="_blank"]
 image:https://api.codeclimate.com/v1/badges/template-bundle/maintainability[link="https://codeclimate.com/github/rich-id/template-bundle/maintainability",window="_blank"]
@@ -53,7 +53,7 @@ composer require rich-id/template-bundle
 
 == Versioning
 
-template-bundle-bundle follows link:https://semver.org/[semantic versioning^]. In short the scheme is MAJOR.MINOR.PATCH where
+template-bundle follows link:https://semver.org/[semantic versioning^]. In short the scheme is MAJOR.MINOR.PATCH where
 1. MAJOR is bumped when there is a breaking change,
 2. MINOR is bumped when a new feature is added in a backward-compatible way,
 3. PATCH is bumped when a bug is fixed in a backward-compatible way.
@@ -74,7 +74,7 @@ As a reminder, all contributors are expected to follow our link:./CODE_OF_CONDUC
 
 == License
 
-cookies-regulation-bundle is distributed under the terms of the MIT license.
+template-bundle is distributed under the terms of the MIT license.
 
 See link:./LICENSE[LICENSE] for details.
 
